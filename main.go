@@ -19,6 +19,7 @@ func main() {
 		request_letter(&game)
 		game.running = !equalRuneSlices(game.word, game.solved) && game.lifePoints > 0
 	}
+	print_game(game)
 	if (game.win == true) {
 	    fmt.Printf("You win with %d lives left.\n", game.lifePoints)
 	} else {
